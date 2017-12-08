@@ -1,0 +1,105 @@
+
+
+/* =============== Logo =============== */
+
+.logo {
+    width: 20%;
+    border-radius: 30%;
+}
+
+.logoContainer {
+    text-align: center;
+    margin: 14px 0 0 0;
+
+}
+
+
+/* =============== Sign Up / Login form =============== */
+
+.logInForm {
+    border: #222222 1px solid ;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.4);
+    padding: 0 0 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30%;
+    margin: 75px  auto;
+}
+
+
+.welcome {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* =============== Container for input fields inside form =============== */
+
+.formContainer{
+    padding: 0 20px;
+    width: 100%;
+}
+
+.formInput {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+/* =============== Buttons in form =============== */
+
+.inputButtons {
+    padding: 0 14px 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+#signUp, #login {
+    background-color: #688f38;
+    color: white;
+    border: none;
+}
+
+#backToFront {
+    background-color: #c60f13;
+    color: white;
+    border: none;
+}
+
+#maybeLtr {
+    background-color: #c60f13 ;
+    color: white;
+    border: none;
+}
+
+#signUp:hover, #maybeLtr:hover, #backToFront:hover, #login:hover {
+    opacity: 0.8;
+    background-color: red;
+}
+
+
+
+/* =============== Media =============== */
+
+@media screen and (max-width: 500px) {
+    #login, #backToFront, #maybeLtr, #signUp {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logInForm{
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+}
+
