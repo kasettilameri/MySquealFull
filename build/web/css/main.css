@@ -185,6 +185,8 @@ footer{
     /*max-width: 50%;*/
     width: 100%;
     bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 50px;
 }
 #footer{
     table-layout: fixed;
@@ -209,14 +211,44 @@ footer{
     display: flex;
 }
 
+
 .responsive-image {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .image {
     display: block;
     margin: 1rem;
+    text-align: center;
 }
+
+#home {
+    padding-top: 50px;
+    font-size: 150%;
+    color: #fffd61;
+}
+
+#mypage {
+    padding-top: 50px;
+    font-size: 150%;
+    color: #fffd61;
+}
+
+.editPost {
+    padding: 2px;
+    background-color: #ffca28;
+    border-radius: 5px;
+    color: white;
+    float: left;
+    border: none;
+    width: 100%;
+}
+
+.editPost:hover {
+    opacity: 0.8;
+}
+
 
 /* ==========================================================================
    Helper classes

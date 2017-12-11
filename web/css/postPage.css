@@ -48,6 +48,12 @@ html, body {
     text-align: left;
     padding: 15px;
     border-radius: 10px;
+    background-color: #387002;
+    color: ivory;
+}
+
+.submitComment:hover{
+    opacity: 0.8;
 }
 
 
@@ -58,6 +64,27 @@ html, body {
 }
 iframe {
     width: 100%;
+}
+
+.cmtContainer{
+    padding: 5px;
+}
+
+.cmtBox {
+    padding: 1px;
+    width: 100%;
+    border: 1px solid #000;
+    background-color: ivory;
+    border-radius: 10px;
+}
+.rightPanel {
+    width: 85%;
+    float: left;
+    margin-left: 1%;
+}
+
+.clear {
+    clear:both;
 }
 
 
