@@ -1,0 +1,111 @@
+html, body{
+    background-color: #689f38;
+    margin: 0;
+}
+
+/* =============== Sign Up / Login form =============== */
+
+.form {
+    /*display: none;*/
+    border: #222222 1px solid ;
+    border-radius: 10px;
+    background-color: #99d066;
+    padding: 0 0 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 20%;
+    border-radius: 30%;
+}
+
+.logoContainer {
+    text-align: center;
+    margin: 14px 0 0 0;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+/* =============== Container for input fields inside form =============== */
+
+.formContainer{
+    padding: 0 20px;
+}
+
+.modalInput {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* =============== Buttons in form =============== */
+
+.inputButtons {
+    padding: 0 14px 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+#signUp, #login {
+    background-color: #688f38;
+    color: white;
+    border: none;
+}
+
+#cancel {
+    background-color: #c60f13;
+    color: white;
+    border: none;
+}
+
+#maybeLtr {
+    background-color: yellow ;
+    color: black;
+    border: none;
+}
+
+#signUp:hover, #maybeLtr:hover, #cancel:hover, #login:hover {
+    opacity: 0.8;
+    background-color: red;
+}
+
+/* =============== Modal =============== */
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255,255,255,0.5);
+    padding-top: 60px;
+}
+
+/* =============== Media =============== */
+
+@media screen and (max-width: 500px) {
+    #login, #cancel, #maybeLtr, #signUp {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .form, .modal {
+        max-width: 100%;
+        padding-top: 0;
+    }
+}

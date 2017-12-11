@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/modal.css">
+
 </head>
 <body>
 <nav class="navbar">
@@ -29,17 +31,46 @@
             </div>
         </form>
         <div class="topnav" id="Topnav">
-            <a href="index.html" class="navbar-active"><i class="fa fa-home"></i></a>
+            <a href="index.html" class="navbar-active"><i class="fa fa-home" title="Home"></i></a>
             <a href="#" id="burger" class="icon"><i class="fa fa-navicon" aria-hidden="true"></i></a>
-            <a href="upload.html"><i class="fa fa-upload"></i></a>
-            <a href="factPage.html"><i class="fa fa-lightbulb-o"></i></a>
-            <a href="mypage.html"><i class="fa fa-user"></i></a>
-            <a href="about.html"><i class="fa fa-at"></i></a>
-            <a href="logout.html"><i class="fa fa-lock"></i></a>
+            <a href="upload.html"><i class="fa fa-upload" title="Upload new image"></i></a>
+            <a href="factPage.html"><i class="fa fa-lightbulb-o" title="Facts about elephants"></i></a>
+            <a href="mypage.html"><i class="fa fa-user" title="User page"></i></a>
+            <a href="about.html"><i class="fa fa-at" title="About Trunkly"></i></a>
+            <a href="logout.html"><i class="fa fa-lock" title="Logout"></i></a>
 
         </div>
     </div>
 </nav>
+    
+    <!--    modal that appears when you enter front page    -->
+<div id="formModal" class="modal">
+    <form class="form">
+        <div class="logoContainer">
+            <a href="index.html"><img src="img/elephant-head-800px.png" alt="Logo" class="logo" title="Welcome to Trunkly"></a>
+        </div>
+
+        <div class="formContainer">
+            <h1>Welcome to Trunkly</h1>
+
+            <input class="modalInput" type="text" name="username" placeholder="Username (required)" required>
+
+            <input class="modalInput" type="email" name="email" placeholder="E-mail">
+
+            <input class="modalInput" type="password" name="password" placeholder="Password (required)"  minlength="8" maxlength="16" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+
+            <input class="modalInput" type="password" placeholder="Repeat Password (required)" name="psw-repeat" required>
+
+            <p><a href="logIn.html">I already have a account.</a></p>
+        </div>
+
+        <div class="inputButtons">
+            <input class="modalInput" type="submit" id="signUp" value="Sign Up">
+            <input class="modalInput" type="button"  id="maybeLtr" value="Maybe later">
+        </div>
+    </form>
+</div>
+    
 
 <div id="home">
     <h2>Welcome</h2>
@@ -71,9 +102,14 @@
     <table id="footer">
         <tr>
             <td>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!--<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
                 <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>-->
+                
+                
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" width="25" alt="Logo"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" width="25" alt="Logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" width="25" alt="Logo"></a>
             </td>
         </tr>
     </table>
@@ -87,5 +123,6 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>
