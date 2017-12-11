@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background: #99d066;
+    background: #689f38;
 }
 
 h2 {
@@ -177,7 +177,7 @@ textarea {
     color: #8a3ab9;
 }
 footer{
-    background-color: #c79a00;
+    /*background-color: #c79a00;*/
     text-align: center;
     color: white;
     font-size: 0.9em;

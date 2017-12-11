@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Trunkly - Sign Up</title>
+    <title>Trunkly</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -13,16 +13,19 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="stylesheet" href="css/postPage.css">
+
 </head>
 <body>
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
+
+<!--    Header / nav bar    -->
 <nav class="navbar">
     <div class="container">
         <div id="navbar-header">
-            <a id="navbar-home" href="#"><img src="banner5.png" width="104px" height="26px"></a>
+            <a id="navbar-home" href="index.html"><img src="banner5.png" width="104px" height="26px"></a>
         </div>
         <form id="navbar-form">
             <div id="form-group">
@@ -33,45 +36,51 @@
             </div>
         </form>
         <div class="topnav" id="Topnav">
-            <a href="index.html" class="navbar-active"><i class="fa fa-home" title="Home"></i></a>
+            <a href="about.html" class="navbar-active"><i class="fa fa-at" title="About Trunkly"></i></a>
             <a href="#" id="burger" class="icon"><i class="fa fa-navicon" aria-hidden="true"></i></a>
-            <a href="mypage.html"><i class="fa fa-user" title="My user page"></i></a>
+            <a href="index.html"><i class="fa fa-home" title="Home"></i></a>
             <a href="upload.html"><i class="fa fa-upload" title="Upload new image"></i></a>
-            <a href="factPage.html"><i class="fa fa-lightbulb-o" title="Facts about Elephants"></i></a>
-            <a href="about.html"><i class="fa fa-at" title="About Trunkly"></i></a>
+            <a href="mypage.html"><i class="fa fa-user" title="My user page"></i></a>
+            <a href="factPage.html"><i class="fa fa-lightbulb-o" title="Facts about elephants"></i></a>
             <a href="logout.html"><i class="fa fa-lock" title="Logout"></i></a>
 
         </div>
     </div>
 </nav>
 
-<div>
-    <form class="logInForm">
 
-        <div class="logoContainer">
-            <img src="img/elephant-head-800px.png" alt="Logo" class="logo">
-        </div>
-        <div class="formContainer">
-            <h1 class="welcome">Welcome to Trunkly</h1>
+<!--    main content    -->
 
-            <input class="formInput" type="text" name="username" placeholder="Username (required)" required >
+<main class="imagePost">
+    <div class="postTitle">
+        <h1> Example title </h1>
+    </div>
 
-            <input class="formInput" type="email" name="email" placeholder="E-mail">
+    <div class="article">
 
-            <input class="formInput" type="password" name="password" placeholder="Password (required)"  minlength="8" maxlength="16" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-
-            <input class="formInput" type="password" placeholder="Repeat Password (required)" name="psw-repeat" required>
-
-            <p><a href="logIn.html">I already have a account.</a></p>
+        <div class="imageView">
+            <a href=""><img src="img/African_elephant_warning_raised_trunk.jpg" class="postedImage"></a>
         </div>
 
-        <div class="inputButtons">
-            <input class="formInput" type="submit" id="signUp" value="Sign Up">
-            <input class="formInput" type="button"  id="maybeLtr" value="Back to Front page" onclick="location.href='index.html';">
+        <div class="commentAndSubmit">
+            <form>
+            <div>
+                <textarea class="comment" cols="40" rows="5" placeholder="Write a comment"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="submitComment" value="Post" class="submitComment">
+            </div>
+            </form>
         </div>
-    </form>
-</div>
 
+        <div class="postedComments">
+            <iframe></iframe>
+        </div>
+    </div>
+
+</main>
+
+<!--    footer    -->
 <footer>
     <table id="footer">
         <tr>
@@ -79,14 +88,23 @@
                 <!--<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
                 <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>-->
-                
+
                 <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" width="25" alt="Logo"></a>
                 <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" width="25" alt="Logo"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" width="25" alt="Logo"></a>
+
             </td>
         </tr>
     </table>
     <p id="copyright">Copyright &copy; 2017 MySqueal</p>
 </footer>
+
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+
 </body>
 </html>
