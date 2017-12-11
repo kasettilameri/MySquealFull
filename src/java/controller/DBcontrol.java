@@ -9,6 +9,7 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import model.Posts;
 import model.Users;
 
 /**
@@ -22,7 +23,7 @@ public class DBcontrol {
     
     public DBcontrol() {   
     }
-        public List<Users> getAll() {
+    public List<Users> getAll() {
         List<Users> list = em.createNamedQuery("Users.findAll").getResultList();
         return list;
     }
@@ -30,6 +31,11 @@ public class DBcontrol {
     public Users insert(Users u) {
         em.persist(u);
         return u;
+    }
+    
+    public Posts upload(Posts p) {
+        em.persist(p);
+        return p;
     }
     
     public void update(Users u) {

@@ -45,11 +45,11 @@
     </div>
 </nav>
 <main id="upload">
-    <form class="form" method="post" enctype="multipart/form-data" action="http://10.114.32.28:8080/trunkly/upload/fileupload">
+    <form class="form" method="post" enctype="multipart/form-data" action="trunkly/upload/fileupload">
         <h2>Upload images</h2>
         <div class="upload-btn-wrapper">
             <button class="btn">Select an image</button>
-            <input type="file" name="fileup" accept="image/*, video/*, audio/*">
+            <input type="file" name="fileup" accept="image/*">
         </div>
         <br><br>
         <h4>Title</h4>
@@ -61,7 +61,7 @@
         <h4>Tags</h4>
         <input type="text" class="tag" name="tag" required>
         <br><br><br>
-        <input type="submit" name="submit">
+        <button type="submit" value="Upload" name="Upload">Upload</button>
     </form>
     <br><br><br>
 </main>
@@ -79,7 +79,7 @@
 </footer>
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>');</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
