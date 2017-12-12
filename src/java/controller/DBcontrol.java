@@ -37,6 +37,10 @@ public class DBcontrol {
         em.persist(p);
         return p;
     }
+    public List<Posts> getAllPosts() {
+        List<Posts> lst = em.createNamedQuery("Posts.findAll").getResultList();
+        return lst;
+    }
     
     public void update(Users u) {
         em.merge(u);
